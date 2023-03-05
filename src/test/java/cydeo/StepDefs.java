@@ -8,10 +8,7 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.junit.Assert;
-import org.openqa.selenium.By;
-import org.openqa.selenium.Keys;
-import org.openqa.selenium.OutputType;
-import org.openqa.selenium.TakesScreenshot;
+import org.openqa.selenium.*;
 
 import java.util.concurrent.TimeUnit;
 
@@ -23,6 +20,9 @@ public class StepDefs {
         Driver.getDriver().manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
         Driver.getDriver().manage().window().maximize();
         Driver.getDriver().get("http://etsy.com");
+        WebElement button=Driver.getDriver().findElement(By.xpath("//button[@class='wt-btn wt-btn--filled wt-mb-xs-0']"));
+        button.click();
+
 
     }
 
