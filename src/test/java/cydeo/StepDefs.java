@@ -9,7 +9,7 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.junit.Assert;
 import org.openqa.selenium.*;
-import pages.AcceptButtonEtsy;
+//import pages.AcceptButtonEtsy;
 
 import java.util.concurrent.TimeUnit;
 
